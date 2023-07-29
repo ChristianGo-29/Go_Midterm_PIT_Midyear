@@ -1,0 +1,877 @@
+*
+{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family:'Times New Roman', Times, serif;
+  background-color: aliceblue;
+}
+
+header{
+  background-color: blue;
+}
+
+header, nav, ul, li {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    padding-top: 5PX;
+    padding-bottom: 5PX;
+    font-weight: 300;
+  }
+
+  header, nav{
+    background-color: blue;
+  }
+  
+  header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  nav ul {
+    display: flex;
+    margin-right: 10cm;
+    background-color: blue;
+  }
+  
+  nav li {
+    margin-left: 25px;
+    background-color: blue;
+  }
+  
+  nav li a {
+    text-decoration: none;
+    color: white;
+    padding: 5px 5px;
+    border-radius: 20px;
+    transition: color 0.3s ease, background-color 0.3s ease;
+    background-color: blue;
+  }
+  
+  nav li a:hover {
+    color: black; 
+    background-color:white;
+  }
+
+  .social-media-icons{
+    display: flex;
+    align-items: end;
+    background-color: blue;
+  }
+  
+  .social-media-icons a, i{
+    margin-left: 10px;
+    color: white;
+    background-color: blue;
+    font-size: 20px;
+    border-radius: 20px;
+  }
+  
+  .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 25px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    background-color: whitesmoke;
+  }
+
+  .logo{
+    background-color: transparent;
+  }
+
+  .logo img {
+    height: 100px;
+    width: 300px;
+    object-fit: fill;
+    background-color: transparent;
+  }
+
+  navbar ul {
+    display: flex;
+    background-color: whitesmoke;
+  }
+
+  navbar li {
+    margin-left: 80px;
+    padding:2px;
+    font-weight: 500;
+    background-color: whitesmoke;
+  }
+
+  navbar li a {
+    text-decoration: none;
+    color: #000;
+    background-color: whitesmoke;
+    padding: 5px 5px;
+    border-radius: 20px;
+    transition: color 0.3s ease, background-color 0.3s ease;
+  }
+
+  navbar li a i{
+    background-color: transparent;
+    color: black;
+  }
+
+  navbar li a:hover {
+    color: black; 
+    background-color:blue;
+  }
+
+  .video-container {
+    max-width: 2000px;
+    margin: 0 auto;
+  }
+  
+  .video-container video {
+    width: 100%;
+    display: block;
+    border-top-left-radius: 10px; 
+    border-top-right-radius: 10px; 
+  }
+
+  .image-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding-top: 50PX;
+    padding-bottom: 50PX;
+  }
+
+  .image-container img {
+    width: 100px; 
+    height: 100px; 
+    object-fit: cover;
+    margin: 30px;
+    border-radius: 10px; 
+  }
+  
+  .about-us {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    background-color: #007bff; /* Blue background color for the rectangle */
+    color: black; /* White text color for the word */
+    font-size: xx-large;
+    font-weight: bold;
+    padding: 10px 20px;
+    border-radius: 20px; /* Border radius of 20px */
+    width: 1250px; /* Set the width of the rectangle */
+    height: 50px; /* Set the height of the rectangle */
+  }
+
+  .description {
+    text-align: left; /* Align the description text to the center */
+    margin-top: 20px; /* Add some spacing between the circular rectangle and the description */
+  }
+  
+  .description p {
+    font-size: 20px;
+    line-height: 1.5;
+    color: #333;
+  }
+
+  .learn-about-container {
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 20px; /* Align the container and its content to the right */
+  }
+  
+  /* Rectangle styles */
+  .learn-about {
+    background-color: blue; /* Blue color for the rectangle */
+    padding: 10px 20px; /* Adjust padding as desired */
+    transition: background-color 0.3s ease; /* Add transition effect */
+  }
+  
+  /* Text styles inside the rectangle */
+  .learn-about h2 {
+    background-color: transparent;
+    font-size: 18px;
+    margin: 0;
+  }
+  
+  /* Hover effect */
+  .learn-about:hover {
+    color: white;
+    background-color: gold; /* Change the background color on hover */
+  }
+
+  .image-link {
+    width: 100%; /* The container will take the full width of its parent element */
+    height: auto; /* Set a fixed height for the container */
+    overflow: hidden; /* Hide any image overflow if the image is larger than the container */
+    background-color: transparent; /* Remove the background color from the container */
+  }
+  
+  /* Image styles */
+  img {
+    width: 100%; /* The image will take the full width of the container */
+    height: 500px; /* The image will take the full height of the container */
+    object-fit: fill; /* The image will be resized while maintaining its aspect ratio to cover the container */
+    display: block; /* Remove any extra spacing or gaps below the image */
+  }
+
+  .news-update {
+    background-color: transparent; /* Blue background color */
+    color: black; /* White text color */
+    padding: 20px; /* Add padding to the container */
+    text-align: center; /* Center the content horizontally */
+  }
+  
+  /* News update heading styles */
+  .news-update-heading {
+    font-size: 36px;
+    font-weight: bold;
+    text-transform: uppercase; /* Convert text to uppercase */
+    text-align: left;
+    letter-spacing: 2px; /* Add some letter spacing */
+    margin-bottom: 10px;
+  }
+  
+  /* Add a nice border to the news update container */
+  .news-update {
+    border-bottom: transparent;
+  }
+  
+  .containers {
+    display: flex;
+  }
+  
+  /* Box styles */
+  .box {
+    flex: 1; /* Each box will take an equal amount of space horizontally */
+    max-width: 25%; /* To limit each box to 25% width */
+    margin-left: 10px;
+    padding: 10px;
+    text-align: center;
+    text-decoration: none;
+    color: #000;
+    background-color: white;
+    transition: background-color 0.3s ease; /* Add smooth background color transition on hover */
+    border-radius: 20px;
+  }
+  
+  .box img {
+    width: 100%;
+    height: 200px;
+  }
+  
+  /* Headline styles */
+  .box h3 {
+    font-size: 18px;
+    margin-top: 10px;
+    background-color: transparent;
+  }
+  
+  /* Hover effect */
+  .box:hover {
+    background-color: white; /* Change background color on hover */
+    color: black; /* Change text color on hover */
+    border: 2px solid black; /* Initial border color */
+    transition: border-color 0.3s ease;
+  }
+
+  .containerss {
+    display: flex;
+    margin-top: 10px;
+  }
+ 
+  .custom-circle {
+    width: 100%;
+    height: 8px;
+    background-color: #007bff; /* Blue background color */
+    color: #fff; /* White text color */
+    text-align: center;
+    border-radius: 55px; /* Create a circular shape with border-radius */
+    padding: 30px; /* Add padding to the circular rectangle */
+    transition: background-color 0.3s ease;
+    margin-top: 20px;
+  }
+  
+  /* Text styles */
+  .custom-circle h2 {
+    background-color: transparent;
+    font-size: 15px;
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+
+  .custom-circle:hover {
+    background-color: gold;
+  }
+
+  .media-update {
+    background-color: transparent; /* Blue background color */
+    color: black; /* White text color */
+    padding: 20px; /* Add padding to the container */
+    text-align: center; /* Center the content horizontally */
+  }
+  
+  /* News update heading styles */
+  .media-update-heading {
+    font-size: 36px;
+    font-weight: bold;
+    text-transform: uppercase; /* Convert text to uppercase */
+    text-align: left;
+    letter-spacing: 2px; /* Add some letter spacing */
+    margin-top: 100px;
+    
+  }
+  
+  /* Add a nice border to the news update container */
+  .media-update {
+    border-bottom: transparent;
+  }
+
+  .containersss {
+    display: flex;
+  }
+  
+  /* Box styles */
+  .boxes {
+    flex: 1; /* Each box will take an equal amount of space horizontally */
+    margin-left: 10px;
+    padding: 10px;
+    text-align: center;
+    text-decoration: none;
+    color: #000;
+    transition: background-color 0.3s ease; /* Add smooth background color transition on hover */
+    border-radius: 20px;
+  }
+  
+  /* Link styles */
+  .boxes a {
+    text-decoration: none;
+    color: #000; /* Link color */
+  }
+  
+  /* Image styles */
+  .boxes img {
+    width: 375px;
+    height: 200px;
+  }
+  
+  /* Hover effect */
+  .boxes:hover {
+    cursor: pointer; /* Show pointer cursor on hover */
+    /* Add any additional hover styles as needed */
+  }
+
+  .containerssss {
+    display: flex;
+  }
+  .media-section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+    background-color: transparent;
+  }
+  
+  .media-container {
+    display: flex;
+    justify-content: space-between;
+    max-width: 800px;
+    margin: 10px ;
+  }
+  
+  /* Picture link styles */
+  .picture-links {
+    display:grid;
+    align-items: center;
+    justify-content: center;
+    padding: 0px 25px 0px 0px;
+    margin: 0 auto; /* Center the .picture-links horizontally */
+  }
+  
+  /* Image styles */
+  .picture-links img {
+    width: 400px;
+    height: 300px;
+    object-fit: fill;
+    border: 1px solid #ccc; /* Optional border for the images */
+    border-radius: 5px;
+  }
+  
+  /* Button styles */
+  .picture-links button {
+    margin-top: 30px;
+    padding: 10px 20px;
+    background-color: blue; /* Blue background color for buttons */
+    font-size: large;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    text-decoration: none;
+  }
+  
+  /* Optional hover effect for the buttons */
+  .picture-links button:hover {
+    background-color: gold; /* Darker blue background color on hover */
+    color: white;
+  }
+
+  .development-corner {
+    display: flex;
+    margin-top: 50px;
+    justify-content: flex-end;
+    align-items: center;
+    background-color: #007bff; /* Blue background color for the rectangle */
+    color: black; /* White text color for the word */
+    font-size: xx-large;
+    font-weight: bold;
+    padding: 10px 20px;
+    border-radius: 20px; /* Border radius of 20px */
+    width: 1250px; /* Set the width of the rectangle */
+    height: 50px; /* Set the height of the rectangle */
+  }
+
+  .containersssss {
+    width: 500px; /* Adjust this width as per your requirement */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    background-color: transparent;
+}
+
+.container img {
+    flex: 1;
+    margin: 5px;
+    max-height: 200px; /* Adjust the height as per your requirement */
+}
+
+.container img:nth-child(1) {
+    max-width: 100%;
+}
+
+.container img:nth-child(2) {
+    max-width: 70%;
+}
+
+.container img:nth-child(3) {
+    max-width: 40%;
+}
+
+.container img:nth-child(4) {
+    max-width: 60%;
+}
+
+  .system-campuses {
+    background-color: transparent; /* Blue background color */
+    color: black; /* White text color */
+    padding: 20px; /* Add padding to the container */
+    text-align: center; /* Center the content horizontally */
+  }
+  
+  /* News update heading styles */
+  .system-campuses-heading {
+    font-size: 36px;
+    font-weight: bold;
+    text-transform: uppercase; /* Convert text to uppercase */
+    text-align: center;
+    letter-spacing: 2px; /* Add some letter spacing */
+    margin-top: 100px;
+    
+  }
+  
+  /* Add a nice border to the news update container */
+  .system-campuses {
+    border-bottom: transparent;
+  }
+
+  .district-one {
+    display: flex;
+    margin-top: 10px;
+    justify-content: flex-end;
+    align-items: center;
+    background-color: #007bff; /* Blue background color for the rectangle */
+    color: black; /* White text color for the word */
+    font-size: xx-large;
+    font-weight: bold;
+    padding: 10px 20px;
+    border-radius: 20px; /* Border radius of 20px */
+    width: 1250px; /* Set the width of the rectangle */
+    height: 50px; /* Set the height of the rectangle */
+  }
+
+  .district-two {
+    display: flex;
+    margin-top: 10px;
+    justify-content: flex-end;
+    align-items: center;
+    background-color: #007bff; /* Blue background color for the rectangle */
+    color: black; /* White text color for the word */
+    font-size: xx-large;
+    font-weight: bold;
+    padding: 10px 20px;
+    border-radius: 20px; /* Border radius of 20px */
+    width: 1250px; /* Set the width of the rectangle */
+    height: 50px; /* Set the height of the rectangle */
+  }
+
+  .buttons {
+    display: flex;
+  }
+  
+  /* Style for the buttons */
+  .buttons button {
+    margin-right: 10px;
+    padding: 10px 20px;
+    background-color: #007bff; /* Blue background color for buttons */
+    color: #fff; /* White text color for buttons */
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    text-decoration: none;
+  }
+
+  .buttons button:hover {
+    background-color: gold; /* Darker blue background color on hover */
+    color: white;
+  }
+
+  .buttons buttoon {
+    margin-left: 20px;
+    padding: 10px 20px;
+    background-color: #007bff; /* Blue background color for buttons */
+    color: #fff; /* White text color for buttons */
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    text-decoration: none;
+  }
+
+  .buttons buttoon:hover {
+    background-color: gold; /* Darker blue background color on hover */
+    color: white;
+  }
+  
+  .d-one-one {
+    width: 100%; /* Full width of the container */
+    max-width: 1225px; /* Set the maximum width for the content */
+    margin: 20px ; /* Center the content horizontally with some top margin */
+    padding: 20px; /* Add some padding for spacing */
+    background-color: transparent; /* White background color for the section */
+    display: flex; /* Use flexbox to arrange the elements */
+  }
+  
+  
+  /* Style for the left-floated content (h1 and description) */
+  .d-one-one-content {
+    flex: 1; /* Allow the content to take up remaining width */
+    display: flex; /* Use flexbox to arrange the h1 and description in a column */
+    flex-direction: column;
+  }
+  
+  
+  /* Style for the h1 heading */
+  .d-one-one-content h1 {
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  
+  /* Style for the description paragraph */
+  .d-one-one-content p {
+    font-size: 16px;
+    line-height: 1.5;
+    margin-bottom: 20px;
+  }
+  
+  /* Style for the image */
+  .d-one-one img {
+    width: 200px;
+    height: auto;
+    margin-left: 20px; /* Add some left margin to separate the image from content */
+    border-radius: 10px; /* Optional: Add rounded corners to the image */
+  }
+  
+
+  .d-one-one {
+    width: 100%; /* Full width of the container */
+    max-width: 1225px; /* Set the maximum width for the content */
+    margin: 20px ; /* Center the content horizontally with some top margin */
+    padding: 20px; /* Add some padding for spacing */
+    background-color: transparent; /* White background color for the section */
+    display: flex; /* Use flexbox to arrange the elements */
+  }
+  
+  /* Style for the left-floated content (h1 and description) */
+  .d-content {
+    flex: 1; /* Allow the content to take up remaining width */
+    display: flex; /* Use flexbox to arrange the h1 and description in a column */
+    flex-direction: column;
+  }
+  
+  /* Style for the h1 heading */
+  .d-content h1 {
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  /* Style for the description paragraph */
+  .d-content p {
+    font-size: 16px;
+    line-height: 1.5;
+    margin-bottom: 20px;
+  }
+  
+  /* Style for the image */
+  .d-one-one img {
+    width: 400px;
+    height: auto;
+    margin-left: 20px; /* Add some left margin to separate the image from content */
+    border-radius: 10px; /* Optional: Add rounded corners to the image */
+  }
+
+  .d-one-two {
+    width: 100%; /* Full width of the container */
+    max-width: 1025; /* Set the maximum width for the content */
+    margin: 20px auto; /* Center the content horizontally with some top margin */
+    padding: 20px; /* Add some padding for spacing */
+    background-color: transparent; /* White background color for the section */
+    display: flex; /* Use flexbox to arrange the elements */
+  }
+  
+  /* Style for the left-floated content (h1 and description) */
+  .d-content-one {
+    flex: 1; /* Allow the content to take up remaining width */
+    display: flex; /* Use flexbox to arrange the h1 and description in a column */
+    flex-direction: column;
+  }
+  
+  /* Style for the h1 heading */
+  .d-content-one h1 {
+    font-size: 28px;
+    font-weight: bold;
+    margin-left: 20px;
+    margin-bottom: 10px;
+  }
+  
+  /* Style for the description paragraph */
+  .d-content-one p {
+    font-size: 16px;
+    line-height: 1.5;
+    margin-left: 20px;
+    margin-bottom: 20px;
+  }
+
+  
+  /* Style for the image */
+  .d-one-two img {
+    width: 400px;
+    height: auto;
+    border-radius: 10px; /* Optional: Add rounded corners to the image */
+  }
+
+  .d-one-three {
+    width: 100%; /* Full width of the container */
+    max-width: 1225px; /* Set the maximum width for the content */
+    margin: 20px ; /* Center the content horizontally with some top margin */
+    padding: 20px; /* Add some padding for spacing */
+    background-color: transparent; /* White background color for the section */
+    display: flex; /* Use flexbox to arrange the elements */
+  }
+
+  .d-one-three img {
+    width: 400px;
+    height: auto;
+    margin-left: 20px; /* Add some left margin to separate the image from content */
+    border-radius: 10px; /* Optional: Add rounded corners to the image */
+  }
+
+  .d-one-four {
+    width: 100%; /* Full width of the container */
+    max-width: 1025; /* Set the maximum width for the content */
+    margin: 20px auto; /* Center the content horizontally with some top margin */
+    padding: 20px; /* Add some padding for spacing */
+    background-color: transparent; /* White background color for the section */
+    display: flex; /* Use flexbox to arrange the elements */
+  }
+
+  .d-one-four img {
+    width: 400px;
+    height: auto;
+    border-radius: 10px; /* Optional: Add rounded corners to the image */
+  }
+
+  .d-one-five {
+    width: 100%; /* Full width of the container */
+    max-width: 1225px; /* Set the maximum width for the content */
+    margin: 20px ; /* Center the content horizontally with some top margin */
+    padding: 20px; /* Add some padding for spacing */
+    background-color: transparent; /* White background color for the section */
+    display: flex; /* Use flexbox to arrange the elements */
+  }
+
+  .d-one-five img {
+    width: 400px;
+    height: auto;
+    margin-left: 20px; /* Add some left margin to separate the image from content */
+    border-radius: 10px; /* Optional: Add rounded corners to the image */
+  }
+
+  .d-one-six {
+    width: 100%; /* Full width of the container */
+    max-width: 1025; /* Set the maximum width for the content */
+    margin: 20px auto; /* Center the content horizontally with some top margin */
+    padding: 20px; /* Add some padding for spacing */
+    background-color: transparent; /* White background color for the section */
+    display: flex; /* Use flexbox to arrange the elements */
+  }
+
+  .d-one-six img {
+    width: 400px;
+    height: auto;
+    border-radius: 10px; /* Optional: Add rounded corners to the image */
+  }
+
+
+  .d-one-seven {
+    width: 100%; /* Full width of the container */
+    max-width: 1225px; /* Set the maximum width for the content */
+    margin: 20px ; /* Center the content horizontally with some top margin */
+    padding: 20px; /* Add some padding for spacing */
+    background-color: transparent; /* White background color for the section */
+    display: flex; /* Use flexbox to arrange the elements */
+  }
+
+  .d-one-seven img {
+    width: 400px;
+    height: auto;
+    margin-left: 20px; /* Add some left margin to separate the image from content */
+    border-radius: 10px; /* Optional: Add rounded corners to the image */
+  }
+  .d-one-eight {
+    width: 100%; /* Full width of the container */
+    max-width: 1025; /* Set the maximum width for the content */
+    margin: 20px auto; /* Center the content horizontally with some top margin */
+    padding: 20px; /* Add some padding for spacing */
+    background-color: transparent; /* White background color for the section */
+    display: flex; /* Use flexbox to arrange the elements */
+  }
+
+  .d-one-eight img {
+    width: 400px;
+    height: auto;
+    border-radius: 10px; /* Optional: Add rounded corners to the image */
+  }
+
+.container-imagae {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-left: 20px;
+    background-color: gold;
+}
+
+.item-container {
+    margin: 10px;
+    text-align: center;
+    background-color: transparent;
+}
+
+.item-container img {
+    width: 50px;
+    height: 50px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.descriptions {
+    font-size: 14px;
+    background-color: transparent;
+    margin-top: 10px;
+}
+  
+
+ 
+
+
+  /*SECOND LOWER CONTAINER*/
+  
+  
+  .lower2 {
+    background-color: gray;
+    width: auto;
+    justify-content: center;
+    padding-top: 40px;
+  
+  }
+  .lower2-container {
+    background-color: gray;
+    display: flex;
+    padding: 50px;
+    justify-content: center;
+    align-items: center;
+    align-items: flex-start;
+  }
+  .logo-container {
+    margin-right: 20px;
+    background-color: gray;
+  }
+  .lower2-container p {
+    background-color: gray;
+    font-size: 14px;
+  }
+
+  .content-container1{
+    background-color: gray;
+  }
+
+  .content-container1 a{
+    background-color: gray;
+    font-size: 20px;
+    padding-bottom: 5px;
+  }
+  .logo-container img {
+    background-color: gray;
+    width: 100px;
+    height: auto;
+    margin-top: 10px;
+    border-radius: 5px;
+    border-bottom: none;
+  }
+  @media (max-width: 600px) {
+    .lower2-container {
+      flex-direction: column;
+      align-items: flex-start;
+      background-color: gray;
+    }
+    .logo-container {
+      margin-right: 0;
+      background-color: gray;
+    }
+  }
+  .content-container2{
+    margin-left: 50px;
+    background-color: gray;
+  }
+  .content-container2 a{
+    background-color: gray;
+    font-size: 20px;
+    padding-bottom: 5px;
+  
+  }
+  .content-container3{
+    margin-left: 20%;
+    background-color: gray;
+  }
+  .content-container3 a{
+    color: rgb(219, 219, 219);;
+    font-size: 20px;
+    padding-bottom: 5px;
+    margin-bottom: 50px;
+    background-color: gray;
+  }
+  
